@@ -9,24 +9,50 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            text-align: center;
-            background-color: #f4f4f4;
+            background-color: #eef2f3;
+            color: #333;
         }
         header {
-            background-color: #004080;
+            background: url('https://cdn.pixabay.com/photo/2016/12/26/17/28/snowplow-1935429_1280.jpg') center/cover;
             color: white;
-            padding: 20px;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
         }
         section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .service {
+            background: white;
             padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 250px;
+        }
+        .service img {
+            width: 100%;
+            border-radius: 10px;
         }
         footer {
             background-color: #004080;
             color: white;
-            padding: 10px;
-            position: absolute;
-            width: 100%;
-            bottom: 0;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -37,18 +63,38 @@
     </header>
     
     <section>
-        <h2>Unsere Leistungen</h2>
-        <p>✔ Schneeräumung | ✔ Streudienst | ✔ 24/7 Einsatzbereitschaft</p>
+        <div class="container">
+            <h2>Unsere Leistungen</h2>
+            <div class="services">
+                <div class="service">
+                    <img src="https://cdn.pixabay.com/photo/2017/12/18/18/07/snow-plow-3022788_1280.jpg" alt="Schneeräumung">
+                    <h3>Schneeräumung</h3>
+                    <p>Wir sorgen für schneefreie Zufahrten und Gehwege.</p>
+                </div>
+                <div class="service">
+                    <img src="https://cdn.pixabay.com/photo/2015/01/16/15/53/snow-plow-601237_1280.jpg" alt="Streudienst">
+                    <h3>Streudienst</h3>
+                    <p>Effektive Glättebekämpfung mit hochwertigen Streumitteln.</p>
+                </div>
+                <div class="service">
+                    <img src="https://cdn.pixabay.com/photo/2017/12/28/18/04/tractor-3049541_1280.jpg" alt="24/7 Einsatz">
+                    <h3>24/7 Einsatz</h3>
+                    <p>Rund um die Uhr einsatzbereit für Ihre Sicherheit.</p>
+                </div>
+            </div>
+        </div>
     </section>
     
     <section>
-        <h2>Kontakt</h2>
-        <p>📞 Telefon: 0123 456789</p>
-        <p>📧 E-Mail: info@deinwinterdienst.de</p>
+        <div class="container">
+            <h2>Kontakt</h2>
+            <p>📞 Telefon: +43680/5502502</p>
+            <p>📧 E-Mail: office@kommunalservice-karner.com</p>
+        </div>
     </section>
     
     <footer>
-        <p>&copy; 2025 Winterdienst GmbH</p>
+        <p>&copy; 2025 Kommunalservice Karner - Alle Rechte vorbehalten</p>
     </footer>
 </body>
 </html>
